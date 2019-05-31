@@ -1,0 +1,22 @@
+//Color Palette
+$dark-blue: #192b43;
+$shade-blue: #294c71;
+$dull-blue: #5d8aa8;
+$blue: #61b3e7;
+$gray: #e6e8fa;
+$white: #ffffff;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    padding: auto;
+}
+
+.nav {
+    background-color: ($dark-blue);
+}
