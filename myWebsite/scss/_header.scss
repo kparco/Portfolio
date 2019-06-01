@@ -5,18 +5,92 @@ $dull-blue: #5d8aa8;
 $blue: #61b3e7;
 $gray: #e6e8fa;
 $white: #ffffff;
+$font: 'Karla', sans-serif;
 
 html,
 body {
     margin: 0;
     padding: 0;
+    font-family: $font;
 }
 
-.container {
-    margin: auto;
-    padding: auto;
+.header {
+    background-color: $dark-blue;
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-main {
+        width: 960px;
+    }
+    .container {
+        margin: 0 auto;
+        padding: 1.25em 1em;
+    }
+    .logo {
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }   
+    .nav {
+        &__list {
+            color: $white;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+
+            &--item {
+                display: inline;
+                padding: 1em;
+                font-size: 18px;
+                font-family: $font;
+                line-height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-.nav {
-    background-color: ($dark-blue);
+.home {
+    background-color: $shade-blue;
+    font-family: $font;
+    color: $white;
+    height: 400px;
+    .container-main {
+        width: 960px;
+    }  
+    .intro-wrapper {
+        height: 100%;
+        margin: auto;
+        padding: 3em 1.5em;
+        text-align: center;
+        .intro-title {
+            font-size: 5em;
+            line-height: 48px;
+            margin-top: .55em;
+        }
+        .title-desc {
+            margin-top: 1em;
+            font-size: 1.6em;
+            line-height: 36px;
+        }
+        h1, h3 {
+            font-family: $font;
+        }
+        .btn-works {
+            color: $white;
+            margin-top: 2em;
+        }
+
+        .btn-primary {
+            border: 2px solid $blue;
+            border-radius: .25em;
+            padding: .6em 1em;
+            font-size: 1.25em;
+        }
+    }
 }
