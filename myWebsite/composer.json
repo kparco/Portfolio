@@ -1,0 +1,10 @@
+{
+    "name": "karen/my-website",
+    "authors": [
+        {
+            "name": "kparco",
+            "email": "parcokaren@gmail.com"
+        }
+    ],
+    "require": {}
+}
