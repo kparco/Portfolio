@@ -5,9 +5,13 @@ $dull-blue: #5d8aa8;
 $blue: #61b3e7;
 $gray: #e6e8fa;
 $white: #ffffff;
+$btn-hover: rgba(97,179,231,0.5);
 $mainfont-color: #333;
 $font-main: 'Karla', sans-serif;
 $container-size: 960px;
+
+$desc: "__desc";
+$desc-text: "-text";
 
 
 html,
@@ -20,6 +24,9 @@ body {
 
 .header {
     background-color: $dark-blue;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     .header-wrapper {
         display: flex;
         align-items: center;
@@ -48,7 +55,7 @@ body {
             padding: 0;
             text-align: right;
 
-            &--item {
+            &-item {
                 display: inline;
                 padding: 1em;
                 font-size: 18px;
@@ -83,7 +90,7 @@ body {
             font-size: 5em;
             line-height: 48px;
             margin-top: .80em;
-            font-weight: 600;
+            font-weight: 500;
         }
         .title-desc {
             margin-top: 1em;
@@ -101,6 +108,12 @@ body {
             border-radius: .25em;
             padding: .6em 1em;
             font-size: 1.25em;
+            .btn-link {
+                color: $white;
+            }
+            &:hover {
+                background-color: $btn-hover;
+            }
         }
     }
 }
@@ -125,7 +138,7 @@ body {
             margin-top: 15px;
         }
         h3 {
-            color: $blue;
+            color: $dull-blue;
             font-family: $font-main;
             font-size: 2.5em;
             margin-top: 20px;
@@ -135,3 +148,64 @@ body {
         }
     }
 }
+
+ #works {
+     color: $mainfont-color;
+     margin: auto;
+     padding: auto;
+     .container-main {
+         width: $container-size;
+         margin: auto;
+         padding: auto;
+     }
+     .works-wrapper {
+         padding: 3em 1.5em;
+         h2 {
+             font-size: 2.35em;
+             font-family: $font-main;
+             text-align: center;
+         }
+         .proj-container {
+             display: flex;
+         }
+         .proj-web {
+             width: $container-size;
+             display: grid;
+             grid-row-gap: 5.50em;
+             grid-template-columns: repeat(2, 450px);
+             grid-template-rows: auto;
+             margin-top: 3.35em;
+             &__desc {
+                 width: 960px;
+                 font-family: $font-main;
+                 &-text {
+                     width: 430px;
+                     h3 {
+                         font-family: $font-main;
+                         font-size: 1.55em;
+                         font-weight: 600;
+                         color: $dull-blue;
+                     }
+                     .src-code {
+                         margin-top: 10px;
+                         font-size: 1.30em;
+                         a {
+                             color: $mainfont-color;
+                             &:hover {
+                                 color: $dull-blue;
+                                 border-bottom: 1px solid $dull-blue;
+                                 padding-bottom: .15em;
+                             }
+                             &:focus {
+                                 color: $dull-blue;
+                             }
+                         }
+                     }
+                 }
+                 &-text2 {
+                     text-align: right;
+                 }
+             }
+         }
+     }
+ }
