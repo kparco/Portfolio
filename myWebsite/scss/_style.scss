@@ -10,8 +10,6 @@ $mainfont-color: #333;
 $font-main: 'Karla', sans-serif;
 $container-size: 960px;
 
-$desc: "__desc";
-$desc-text: "-text";
 
 
 html,
@@ -125,6 +123,7 @@ body {
     padding: auto;
     text-align: center;
     font-family: $font-main;
+    height: 600px;
     .container-main {
         margin: auto;
         padding: auto;
@@ -135,7 +134,7 @@ body {
         img {
             height: 200px;
             width: 200px;
-            margin-top: 15px;
+            margin-top: 30px;
         }
         h3 {
             color: $dull-blue;
@@ -206,6 +205,13 @@ body {
                      text-align: right;
                  }
              }
+             &__desc2 {
+                 text-align: right;
+                 font-family: $font-main;
+             }
+         }
+         .view-more {
+             padding: 2.5em 1.5em;
          }
      }
  }
