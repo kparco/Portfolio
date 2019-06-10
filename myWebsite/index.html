@@ -1,76 +1,83 @@
 <!DOCTYPE html>
-<head>
-  <title>Karen Parco - Web and Graphic Designer</title>
-  <link rel="stylesheet" type="text/css" href="./css/app.css"
-</head>
+<html>
+  <head>
+    <title>Karen Parco - Web and Graphic Designer</title>
+    <link rel="stylesheet" type="text/css" href="./css/app.css"
+  </head>
 
-<body>
-  <header class="header">
-    <div class="container container-main header-wrapper">
-      <div class="logo">
-        <a class="home-link" href="index.html"><img src="./images/karen-round.png" alt="Karen Parco"></a>
+  <body>
+    <header class="header">
+      <div class="container container-main header-wrapper">
+        <div class="logo">
+          <a class="home-link" href="index.html"><img src="./images/karen-round.png" alt="Karen Parco"></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a class="links" href="#about">About</a></li>
+            <li class="nav__list-item"><a class="links" href="#works">Works</a></li>
+            <li class="nav__list-item"><a class="links" href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item"><a class="links" href="#about">About</a></li>
-          <li class="nav__list-item"><a class="links" href="#works">Works</a></li>
-          <li class="nav__list-item"><a class="links" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main role="main">
-    <section id="home">
-      <article class="container-main intro-wrapper">
-        <h1 class="intro-title">I'm Karen</h1>
-        <h3 class="title-desc">a web and graphic designer</h3>
-        <button class="btn-works btn-primary"><a class="btn-link" href="#works">Check out my works →</a></button>
-      </article>
-    </section>
-    <section id="about">
-      <article class="container-main about-wrapper">
-        <figure>
-          <img src="./images/karen-round.png" alt="Karen Parco">
-        </figure>
-        <h3>Hi.</h3>
-        <p>I'm a web and graphic designer based in Philippines. As a self-directed learner, I am keen to explore new things and enjoy challenges that will put my skills into practice. I'm also looking forward to pursue web development to hone my skills and to create simple and user-friendly websites. I'm also passionate about books, music, movies, and arts.</p>
-      </article>
-    </section>
-    <section id="works">
-      <article class="container-main works-wrapper">
-        <h2>Projects</h2>
-        <div class="proj-web proj-container">
-          <div class="proj-web__desc">
-            <div class="proj-web__desc-text">
+    <main role="main">
+      <section id="home">
+        <article class="container-main intro-wrapper">
+          <h1 class="intro-title">I'm Karen</h1>
+          <h3 class="title-desc">a web and graphic designer</h3>
+          <button class="btn-works btn-primary"><a class="btn-link" href="#works">Check out my works →</a></button>
+        </article>
+      </section>
+      <section id="about">
+        <article class="container-main about-wrapper">
+          <figure>
+            <img src="./images/karen-round.png" alt="Karen Parco">
+          </figure>
+          <h3>Hi.</h3>
+          <p>I'm a web and graphic designer based in Philippines. As a self-directed learner, I am keen to explore and learn new things. I am also looking forward to pursue web development and meet challenges that will put my skills into practice in creating simple and user-friendly websites. I'm also passionate about books, music, movies, and arts.</p>
+        </article>
+      </section>
+      <section id="works">
+        <article class="container-main works-wrapper">
+          <h2>Projects</h2>
+          <div class="proj-web proj-container">
+            <div class="proj-web__desc">
+              <div class="proj-web__desc-text">
                 <h3>GT Jigs & Checkers Manufacturing</h3>
                 <p>A sample responsive website template for GT Manufacturing.</p>
                 <div class="src-code">
                   <a href="https://github.com/kparco/gt-manufacturing" target="_blank">Source</a>
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="proj-web__img">
-            <img src="./images/gt-manufacturing.png" alt="GT Manufacturing">
-          </div>
-          <div class="proj-web__img">
-            <img src="./images/rps-game.png" alt="rps game">
-          </div>
-          <div class="proj-web__desc2">
-            <div class="proj-web__desc-text">
-              <h3>Rock, Paper, Scissors Game</h3>
-              <p>A simple rock, paper, scissors game built in vanilla JS.</p>
-              <div class="src-code">
-                <a href="https://github.com/kparco/rps-game-gui" target="_blank">Source</a>
+            <div class="proj-web__img">
+              <img src="./images/gt-manufacturing.png" alt="GT Manufacturing">
+            </div>
+            <div class="proj-web__img">
+              <img src="./images/rps-game.png" alt="rps game">
+            </div>
+            <div class="proj-web__desc2">
+              <div class="proj-web__desc-text">
+                <h3>Rock, Paper, Scissors Game</h3>
+                <p>A simple rock, paper, scissors game built in vanilla JS.</p>
+                <div class="src-code">
+                  <a href="https://github.com/kparco/rps-game-gui" target="_blank">Source</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="view-more view-container">
-          <button class="btn-gHub"><a class="gHub-link" href="#">View more on Github <img src="./images/github-logo.png" alt="github"></a></button>
-        </div>
-      </article>
+          <div class="view-more view-container">
+            <span>View more projects</span>
+            <div class="view-proj">
+              <a class="github" href="https://github.com/kparco" target="_blank"><img id="github" src="./images/github-logo.png" alt="Github"></a>
+              <a class="behance" href="https://www.behance.net/karenparco" target="_blank"><img id="behance" src="./images/behance.png" alt="Behance"></a>
+            </div>
+          </div>
+        </article>
 
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
