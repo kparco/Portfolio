@@ -2,82 +2,94 @@
 <html>
   <head>
     <title>Karen Parco - Web and Graphic Designer</title>
-    <link rel="stylesheet" type="text/css" href="./css/app.css"
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
   </head>
 
   <body>
     <header class="header">
-      <div class="container container-main header-wrapper">
-        <div class="logo">
-          <a class="home-link" href="index.html"><img src="./images/karen-round.png" alt="Karen Parco"></a>
-        </div>
+      <div class="container container-wrapper">
         <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__list-item"><a class="links" href="#about">About</a></li>
-            <li class="nav__list-item"><a class="links" href="#works">Works</a></li>
-            <li class="nav__list-item"><a class="links" href="#">Contact</a></li>
+          <ul>
+            <li><a class="nav-lilnk" href="#about">About</a></li>
+            <li><a class="nav-lilnk" href="#projects">Projects</a></li>
+            <li><a class="nav-lilnk" href="#">Contact</a></li>
           </ul>
         </nav>
+        <div class="intro-home intro-wrapper">
+          <div class="intro-image">
+            <figure>
+              <img src="./images/karen-round.png" alt="karen-pic">
+            </figure>
+          </div>
+          <div class="intro-desc">
+            <div class="speech-bubble">
+              <span>Hi! I'm Karen Parco. I'm a web and graphic designer.</span>
+            </div>
+            <div class="contact-icons">
+              <a class="contact-link" href="https://github.com/kparco" target="_blank"><img src="./images/github-blue.png" alt="github"></a>
+              <a class="contact-link" href="https://www.behance.net/karenparco" target="_blank"><img src="./images/behance-blue.png" alt="behance"></a>
+              <a class="contact-link" href="https://www.linkedin.com/in/karen-parco-13941b104/" target="_blank"><img src="./images/linkedin-blue.png" alt="linkedin"></a>
+              <a class="contact-link" href="mailto:parcokaren@gmail.com"><img src="./images/mail-blue.png" alt="email"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-
-    <main role="main">
-      <section id="home">
-        <article class="container-main intro-wrapper">
-          <h1 class="intro-title">I'm Karen</h1>
-          <h3 class="title-desc">a web and graphic designer</h3>
-          <button class="btn-works btn-primary"><a class="btn-link" href="#works">Check out my works →</a></button>
-        </article>
-      </section>
+    <main class="main">
       <section id="about">
-        <article class="container-main about-wrapper">
-          <figure>
-            <img src="./images/karen-round.png" alt="Karen Parco">
-          </figure>
-          <h3>Hi.</h3>
-          <p>I'm a web and graphic designer based in Philippines. As a self-directed learner, I am keen to explore and learn new things. I am also looking forward to pursue web development and meet challenges that will put my skills into practice in creating simple and user-friendly websites. I'm also passionate about books, music, movies, and arts.</p>
-        </article>
+        <div class="container container-wrapper">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <span>I am an Information Technology graduate from AMA Computer College. As a self-directed learner, I am keen to explore and learn new things. I am also looking forward to pursue web development and meet challenges that will put my skills into practice in creating simple and user-friendly websites. I also have great interests in books, music, movies, and arts.</span>
+          </div>
+          <div class="about-image">
+            <img src="./images/web-design.png">
+          </div>
+        </div>
       </section>
-      <section id="works">
-        <article class="container-main works-wrapper">
-          <h2>Projects</h2>
-          <div class="proj-web proj-container">
-            <div class="proj-web__desc">
-              <div class="proj-web__desc-text">
-                <h3>GT Jigs & Checkers Manufacturing</h3>
-                <p>A sample responsive website template for GT Manufacturing.</p>
-                <div class="src-code">
-                  <a href="https://github.com/kparco/gt-manufacturing" target="_blank">Source</a>
-                </div>
-              </div>
+      <section id="projects">
+        <div class="container container-wrapper">
+          <div class="project-text">
+            <h2>Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <div class="prj-image">
+              <img src="./images/gt-manufacturing.png">
             </div>
-            <div class="proj-web__img">
-              <img src="./images/gt-manufacturing.png" alt="GT Manufacturing">
+            <div class="prj-desc">
+              <p>A sample responsive website template for GT Manufacturing.</p>
+              <a class="src-link" href="https://github.com/kparco/gt-manufacturing" target="_blank">Source</a>
             </div>
-            <div class="proj-web__img">
-              <img src="./images/rps-game.png" alt="rps game">
+            <div class="prj-image">
+              <img src="./images/rps-game.png">
             </div>
-            <div class="proj-web__desc2">
-              <div class="proj-web__desc-text">
-                <h3>Rock, Paper, Scissors Game</h3>
-                <p>A simple rock, paper, scissors game built in vanilla JS.</p>
-                <div class="src-code">
-                  <a href="https://github.com/kparco/rps-game-gui" target="_blank">Source</a>
-                </div>
-              </div>
+            <div class="prj-desc">
+              <p>A simple rock, paper, scissors game built in vanilla JS.</p>
+              <a class="src-link" href="https://github.com/kparco/rps-game-gui" target="_blank">Source</a>
+            </div>
+            <div class="prj-image">
+              <img src="./images/cantier-site.png">
+            </div>
+            <div class="prj-desc">
+              <p>Cantier Systems' official website which I redesigned using Wordpress.</p>
+              <a class="src-link" href="https://www.cantier.com/" target="_blank">Preview</a>
             </div>
           </div>
-          <div class="view-more view-container">
-            <span>View more projects</span>
-            <div class="view-proj">
-              <a class="github" href="https://github.com/kparco" target="_blank"><img id="github" src="./images/github-logo.png" alt="Github"></a>
-              <a class="behance" href="https://www.behance.net/karenparco" target="_blank"><img id="behance" src="./images/behance.png" alt="Behance"></a>
-            </div>
+        </div>
+      </section>
+      <section id="tech-stack">
+        <div class="container">
+          <div class="tech-flex">
+            <img src="./images/html-logo.png">
+            <img src="./images/css-logo.png">
+            <img src="./images/js-logo.png">
+            <img src="images/sass-logo.png">
+            <img src="images/gulp-logo.png">
+            <img src="images/wp-logo.png">
+            <img src="./images/git-logo.png">
           </div>
-        </article>
-
+        </div>
       </section>
     </main>
-    <script src="./js/script.js"></script>
   </body>
 </html>
