@@ -5,10 +5,13 @@ $dull-blue: #5d8aa8;
 $blue: #61b3e7;
 $gray: #e6e8fa;
 $white: #ffffff;
-$btn-hover: rgba(97,179,231,0.5);
+// $btn-hover: rgba(97,179,231,0.5);
 $main-color: #333;
+
 $font-main: 'Karla', sans-serif;
 $container-size: 960px;
+
+@import "custom-breakpt";
 
 
 
@@ -23,8 +26,26 @@ body {
 .header {
     background-color: $dark-blue;
     height: 100vh;
+    @include custom-breakpoint('xmedium-down') {
+        height: 65vh;
+    }
+    @include custom-breakpoint('xmedium-only') {
+        height: 88vh;      
+    }
+    @include custom-breakpoint('small-down') {
+        height: 80vh;
+    }
     .container {
         width: $container-size;
+        @include custom-breakpoint('xmedium-down') {
+            width: 550px;
+        }
+        @include custom-breakpoint('xmedium-only') {
+            width: 550px;        
+        }
+        @include custom-breakpoint('small-down') {
+            width: 380px;
+        }
         margin: auto;
     }
     .container-wrapper {
@@ -57,17 +78,33 @@ body {
             margin: auto;
             padding: auto;
             display: flex;
+            @include custom-breakpoint('small-down') {
+                width: 330px;
+                flex-direction: column;
+            }
         }
         .intro-wrapper {
             margin-top: 10em;
+            @include custom-breakpoint('xmedium-down') {
+                margin-top: 5em;
+            }
+            @include custom-breakpoint('small-down') {
+                margin-top: 3em;
+            }
             .intro-image {
                 img {
                     height: 140px;
                     width: 140px;
                 }
+                @include custom-breakpoint('small-down') {
+                    margin: auto;
+                }
             }
             .intro-desc {
                 margin-left: 1.75em;
+                @include custom-breakpoint('small-down') {
+                    margin: auto;
+                }
                 .speech-bubble {
                     position: relative;
                     border-radius: .4em;
@@ -77,6 +114,9 @@ body {
                     color: white;
                     font-family: $font-main;
                     font-size: 1.15em;
+                    @include custom-breakpoint('small-down') {
+                        margin-top: 1em;
+                    }
                 }
                 .speech-bubble:after {
                     content: '';
@@ -90,6 +130,19 @@ body {
                     border-left: 0;
                     margin-top: -10px;
                     margin-left: -10px;
+                    @include custom-breakpoint('small-down') {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 0;
+                        height: 0;
+                        border: 10px solid transparent;
+                        border-bottom-color: $blue;
+                        border-top: 0;
+                        margin-top: -10px;
+                        margin-left: -10px;
+                    }
                 }
                 .contact-icons {
                     margin-top: 1em;
@@ -108,13 +161,43 @@ body {
 #about {
     .container {
         width: $container-size;
+        @include custom-breakpoint('xmedium-down') {
+            width: 620px;
+            display: flex;
+            flex-direction: column;  
+        }
+        @include custom-breakpoint('xmedium-only') {
+            width: 620px;
+            display: flex;
+            flex-direction: column;      
+        }
+        @include custom-breakpoint('small-down') {
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
     .container-wrapper {
         margin: 4em auto;
+        @include custom-breakpoint('small-down') {
+            margin: 2em auto;
+        }
         display: flex;
         .about-text {
             width: 460px;
             padding: 2em;
+            @include custom-breakpoint('xmedium-down') {
+                width: 620px;   
+                padding: 1.5em 2em; 
+            }
+            @include custom-breakpoint('xmedium-only') {
+                width: 620px;   
+                padding: 1.5em 2em; 
+            }
+            @include custom-breakpoint('small-down') {
+                width: 380px;
+            }
             h2{
                 color: $dull-blue;
                 font-size: 1.75em;
@@ -131,6 +214,9 @@ body {
         }
         .about-image {
             margin: auto;
+            @include custom-breakpoint('small-down') {
+                padding: 1em;
+            }
             img {
                 max-width: 100%;
                 width: 450px;
@@ -145,6 +231,15 @@ body {
     .container {
         width: $container-size;
         margin: auto;
+        @include custom-breakpoint('xmedium-down') {
+            width: 620px;
+        }
+        @include custom-breakpoint('xmedium-only') {
+            width: 620px;
+        }
+        @include custom-breakpoint('small-down') {
+            width: 380px;
+        }
     }
     .container-wrapper {
         padding: 2em;
@@ -160,6 +255,18 @@ body {
             grid-template-columns: repeat(2, 450px);
             grid-template-rows: auto;
             grid-row-gap: 3em;
+            @include custom-breakpoint('xmedium-down') {
+                grid-template-columns: 1fr;
+                grid-row-gap: .20em;
+            }
+            @include custom-breakpoint('xmedium-only') {
+                grid-template-columns: 1fr;
+                grid-row-gap: .20em;
+            }
+            @include custom-breakpoint('small-down') {
+                grid-template-columns: auto;
+                grid-row-gap: .20em;
+            }
             .prj-image {
                 padding: 1em;
                 img {
@@ -170,12 +277,25 @@ body {
             .prj-desc {
                 padding: 2em 1.35em;
                 font-family: $font-main;
+                @include custom-breakpoint('xmedium-only') {
+                    padding: 1em;
+                }
+                @include custom-breakpoint('small-down') {
+                    padding: 1em;
+                }
                 p {
                     color: $white;
                     font-size: 1.25em;
+                    @include custom-breakpoint('small-down') {
+                        font-size: 1em;
+                    }
+                    line-height: 24px;
                 }
                 a {
                     font-size: 1.35em;
+                    @include custom-breakpoint('small-down') {
+                        font-size: 1.15em;
+                    }
                     color: $blue;
                     padding: .25em;
                     &:hover {
@@ -200,6 +320,14 @@ body {
             img {
                 height: 110px;
                 width: 110px;
+                @include custom-breakpoint('xmedium-down') {
+                    margin: .55em;
+                }
+                @include custom-breakpoint('small-down') {
+                    height: 90px;
+                    width: 90px;
+                    margin: .55em;
+                }
             }
         }
     }

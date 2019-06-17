@@ -4,7 +4,7 @@ backtotopBtn.style.display = "none";
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 320) {
         //show back to top button
         if (!backtotopBtn.classList.contains("btnShow")) {
             backtotopBtn.classList.remove("btnHide");
